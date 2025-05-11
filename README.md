@@ -24,8 +24,12 @@ Possess a good understanding of data **normalization** principles, particularly 
 Have experience with GitHub repositories for documentation and project submission.
 Follow industry best practices for database design and scripting.
 Key Highlights
-**Task 1:** Craft a detailed **Entity-Relationship Diagram (ERD)** to visualize the database design, ensuring clear relationships and properly defined entities.
-**Task 2:** Apply **normalization** principles to refine your database design, optimizing data integrity and minimizing redundancy.
-**Task 3:** Create SQL scripts to define the database schema, incorporating primary keys, foreign keys, and indexes for optimal query performance.
-**Task 4:** Populate the database with real-world sample data, simulating an Airbnb-like environment with users, properties, bookings, and payments.
+
+**Task 1:** Craft a detailed **Entity-Relationship Diagram (ERD)** to visualize the database design, ensuring clear relationships and properly defined entities.<br>
+**Task 2:** Apply **normalization** principles to refine your database design, optimizing data integrity and minimizing redundancy.<br>
+
+**Task 3:** Create SQL scripts to define the database schema, incorporating primary keys, foreign keys, and indexes for optimal query performance.<br>
+
+**Task 4:** Populate the database with real-world sample data, simulating an Airbnb-like environment with users, properties, bookings, and payments.<br>
+
 Each task builds on the previous one, providing a step-by-step approach to developing a robust database system. By completing this project, you’ll gain hands-on experience with real-world database challenges, preparing you for complex projects in professional environments.
