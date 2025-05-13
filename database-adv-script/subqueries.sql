@@ -23,6 +23,6 @@ JOIN (
 SELECT u.user_id, u.first_name,u.last_name
 FROM users u
 WHERE (
-    SELECT (*) FROM bookings b 
+    SELECT COUNT(*) FROM bookings b 
     WHERE b.user_id = u.user_id
     ) > 3;
