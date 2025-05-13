@@ -59,7 +59,7 @@ SELECT * FROM bookings WHERE status = 'confirmed';
 **Query:**
 
 ```sql
-SELECT * FROM bookings WHERE user_id = 'some-user-uuid';
+SELECT * FROM bookings WHERE user_id = '20000000-0000-0000-0000-000000000001';
 ```
 
 - **Before Index:**
@@ -85,7 +85,7 @@ SELECT * FROM bookings WHERE user_id = 'some-user-uuid';
 **Query:**
 
 ```sql
-SELECT * FROM properties WHERE host_id = 'some-host-uuid';
+SELECT * FROM properties WHERE host_id = '00000000-0000-0000-0000-000000000002';
 ```
 
 - **Before Index:**
@@ -120,6 +120,8 @@ SELECT * FROM properties WHERE location = 'New York';
   Seq Scan on properties
   Execution Time: ~2.6 ms
   ```
+
+  some-host-uuid
 
 - **After Index (idx_properties_location):**
 
