@@ -19,3 +19,24 @@ CREATE INDEX idx_properties_location ON properties(location);
 
 -- Index on properties.pricepernight for sorting or range filters
 CREATE INDEX idx_properties_pricepernight ON properties(pricepernight);
+
+
+-- ========================
+-- EXPLAIN ANALYZE Queries for Performance Measurement
+-- ========================
+
+-- 1. Filter bookings by status
+EXPLAIN ANALYZE
+SELECT * FROM bookings WHERE status = 'confirmed';
+
+-- 2. Filter bookings by user_id
+EXPLAIN ANALYZE
+SELECT * FROM bookings WHERE user_id = 'some-user-uuid';
+
+-- 3. Filter properties by host_id
+EXPLAIN ANALYZE
+SELECT * FROM properties WHERE host_id = 'some-host-uuid';
+
+-- 4. Filter properties by location
+EXPLAIN ANALYZE
+SELECT * FROM properties WHERE location = 'New York';
